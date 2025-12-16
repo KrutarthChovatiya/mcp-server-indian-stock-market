@@ -1,6 +1,8 @@
 #mcp-server-indian-stock-market
+
 An MCP (Model Context Protocol) server for accessing Indian stock market data and integrating it with Claude via the MCP framework.
-=======================================================================================================================================
+
+==========================================================================================
 📋 Requirements
 
 To use this project, make sure you have the following:
@@ -24,8 +26,7 @@ Windows (WinGet):
 
 winget install --id=astral-sh.uv -e
 
-=======================================================================================================================================
-
+==========================================================================================
 🚀 Project Setup
 
 Follow the steps below to set up the MCP server locally.
@@ -59,15 +60,12 @@ source .venv/Scripts/activate
 To deactivate the environment:
 deactivate
 
-=======================================================================================================================================
-
+==========================================================================================
 📦 Install Dependencies
 Install the MCP Python SDK with CLI support and required dependencies:
-
 uv add "mcp[cli]" httpx
 
-=======================================================================================================================================
-
+==========================================================================================
 📁 Add main.py
 
 Clone the repository or download the source code:
@@ -87,8 +85,7 @@ mcp-server-indian-stock-market/
 ├── pyproject.toml
 └── .venv/
 
-=======================================================================================================================================
-
+==========================================================================================
 ⚙️ MCP Configuration
 
 Add the following entry to your MCP configuration file:
@@ -121,8 +118,7 @@ uv must exist at the specified path
 
 Once configured, restart Claude Desktop and the MCP server will be available for use.
 
-=======================================================================================================================================
-
+==========================================================================================
 🛠️ Optional Improvements
 
 You may want to add:
