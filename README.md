@@ -2,7 +2,7 @@
 
 An MCP (Model Context Protocol) server for accessing Indian stock market data and integrating it with Claude via the MCP framework.
 
-==========================================================================================
+=================================================================================
 
 📋 Requirements
 
@@ -27,7 +27,7 @@ Windows (WinGet):
 
 winget install --id=astral-sh.uv -e
 
-==========================================================================================
+=================================================================================
 
 🚀 Project Setup
 
@@ -62,13 +62,13 @@ source .venv/Scripts/activate
 To deactivate the environment:
 deactivate
 
-==========================================================================================
+=================================================================================
 
 📦 Install Dependencies
 Install the MCP Python SDK with CLI support and required dependencies:
 uv add "mcp[cli]" httpx
 
-==========================================================================================
+=================================================================================
 
 📁 Add main.py
 
@@ -85,7 +85,7 @@ mcp-server-indian-stock-market/
 ├── pyproject.toml
 └── .venv/
 
-==========================================================================================
+=================================================================================
 
 ⚙️ MCP Configuration
 
@@ -114,7 +114,7 @@ uv must exist at the specified path
 ✅ You're Ready
 Once configured, restart Claude Desktop and the MCP server will be available for use.
 
-==========================================================================================
+=================================================================================
 
 🛠️ Optional Improvements
 
@@ -123,4 +123,5 @@ Tool descriptions exposed by the MCP server
 Example Claude prompts
 Error handling and logging
 API rate-limit handling
+
 
