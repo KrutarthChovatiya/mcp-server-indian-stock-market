@@ -3,6 +3,7 @@
 An MCP (Model Context Protocol) server for accessing Indian stock market data and integrating it with Claude via the MCP framework.
 
 ==========================================================================================
+
 📋 Requirements
 
 To use this project, make sure you have the following:
@@ -27,6 +28,7 @@ Windows (WinGet):
 winget install --id=astral-sh.uv -e
 
 ==========================================================================================
+
 🚀 Project Setup
 
 Follow the steps below to set up the MCP server locally.
@@ -61,22 +63,20 @@ To deactivate the environment:
 deactivate
 
 ==========================================================================================
+
 📦 Install Dependencies
 Install the MCP Python SDK with CLI support and required dependencies:
 uv add "mcp[cli]" httpx
 
 ==========================================================================================
+
 📁 Add main.py
 
 Clone the repository or download the source code:
-
 git clone <your-github-repository-url>
 
-
 Copy main.py into your project root directory:
-
 cp <cloned-repo-path>/main.py .
-
 
 Your directory structure should look like this:
 
@@ -86,6 +86,7 @@ mcp-server-indian-stock-market/
 └── .venv/
 
 ==========================================================================================
+
 ⚙️ MCP Configuration
 
 Add the following entry to your MCP configuration file:
@@ -105,28 +106,21 @@ Add the following entry to your MCP configuration file:
 }
 
 Configuration Notes
-
 Replace username with your system username
-
 Replace <absolute-path-to>/main.py with the full path to main.py
-
 Ensure the virtual environment is active when running the server
-
 uv must exist at the specified path
 
 ✅ You're Ready
-
 Once configured, restart Claude Desktop and the MCP server will be available for use.
 
 ==========================================================================================
+
 🛠️ Optional Improvements
 
 You may want to add:
-
 Tool descriptions exposed by the MCP server
-
 Example Claude prompts
-
 Error handling and logging
-
 API rate-limit handling
+
