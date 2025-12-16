@@ -1,8 +1,97 @@
-An MCP server for accessing Indian stock market data.
+#mcp-server-indian-stock-market
+An MCP (Model Context Protocol) server for accessing Indian stock market data and integrating it with Claude via the MCP framework.
+=======================================================================================================================================
+📋 Requirements
 
-Setup
+To use this project, make sure you have the following:
 
-Add the following configuration to your MCP configuration file:
+A Claude.ai account (MCP support is available for all account types)
+
+Claude Desktop App (macOS or Windows)
+
+A code editor such as Visual Studio Code
+
+uv – a fast, Rust-based Python package manager
+
+Install uv
+
+macOS (Homebrew):
+
+brew install uv
+
+
+Windows (WinGet):
+
+winget install --id=astral-sh.uv -e
+
+=======================================================================================================================================
+
+🚀 Project Setup
+
+Follow the steps below to set up the MCP server locally.
+
+1. Create Project Directory
+mkdir mcp-server-indian-stock-market
+cd mcp-server-indian-stock-market
+
+2. Initialize a uv Project
+uv init
+
+3. Create a Virtual Environment
+uv venv
+
+4. Activate the Virtual Environment
+
+macOS / Linux:
+source .venv/bin/activate
+
+Windows:
+Command Prompt
+.venv\Scripts\activate.bat
+
+PowerShell
+.venv\Scripts\Activate.ps1
+
+Git Bash
+source .venv/Scripts/activate
+
+
+To deactivate the environment:
+deactivate
+
+=======================================================================================================================================
+
+📦 Install Dependencies
+Install the MCP Python SDK with CLI support and required dependencies:
+
+uv add "mcp[cli]" httpx
+
+=======================================================================================================================================
+
+📁 Add main.py
+
+Clone the repository or download the source code:
+
+git clone <your-github-repository-url>
+
+
+Copy main.py into your project root directory:
+
+cp <cloned-repo-path>/main.py .
+
+
+Your directory structure should look like this:
+
+mcp-server-indian-stock-market/
+├── main.py
+├── pyproject.toml
+└── .venv/
+
+=======================================================================================================================================
+
+⚙️ MCP Configuration
+
+Add the following entry to your MCP configuration file:
 
 {
   "indian_stock_market": {
@@ -13,15 +102,35 @@ Add the following configuration to your MCP configuration file:
       "mcp[cli]",
       "mcp",
       "run",
-      "<path>/main.py"
+      "<absolute-path-to>/main.py"
     ]
   }
 }
 
-Notes
+Configuration Notes
 
-Replace username with your system username.
+Replace username with your system username
 
-Replace <path>/main.py with the absolute path to your main.py file.
+Replace <absolute-path-to>/main.py with the full path to main.py
 
-Ensure uv and mcp are installed and available at the specified path.
+Ensure the virtual environment is active when running the server
+
+uv must exist at the specified path
+
+✅ You're Ready
+
+Once configured, restart Claude Desktop and the MCP server will be available for use.
+
+=======================================================================================================================================
+
+🛠️ Optional Improvements
+
+You may want to add:
+
+Tool descriptions exposed by the MCP server
+
+Example Claude prompts
+
+Error handling and logging
+
+API rate-limit handling
